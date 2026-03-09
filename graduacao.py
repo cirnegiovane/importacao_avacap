@@ -1,12 +1,13 @@
 # importacao
 
 import pandas as pd
-from utils import get_disciplinas, set_nome_breve, ja_tem
+from utils import get_disciplinas, set_nome_breve
 geral = pd.read_csv('geral.csv',skiprows=1)
 atual = pd.read_csv('base.csv')
 
 #INSTITUTO = 'FIS'
 INSTITUTO = str(input('Digite exatamente o codigo do instituto em questão (ex.: FIS, IEFD): '))
+SENHA_PADRAO = '123'
 # filtragem
 
 
@@ -38,7 +39,7 @@ atual['username'] = geral_filtrada['Matrícula']
 
 # senha
 
-atual['password'] = 'Avacap2026@'
+atual['password'] = SENHA_PADRAO
 
 # email
 

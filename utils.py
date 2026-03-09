@@ -17,8 +17,3 @@ def set_nome_breve(dict,path):
             chave_atual = chaves[i]
             nome_breve = linhas[i].strip()
             dict[chave_atual] = nome_breve
-    
-
-
-def ja_tem():
-    ...
